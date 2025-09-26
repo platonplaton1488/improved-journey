@@ -586,7 +586,6 @@ def transfer_points_command(message):
         parts = message.text.split()
         if len(parts) < 3:
             raise ValueError
-        
         target_username = parts[1]
         if not target_username.startswith('@'):
             raise ValueError
